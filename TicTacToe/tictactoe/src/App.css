@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.winner {
+  position: absolute;
+  top: 40vh;
+  left: calc(50vw + 100px);
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.board {
+  width: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
+
+.tile {
+  background-color: beige;
+  width: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+/* .tile.tile-begin {
+  background-color: blue;
+} */
+
+.circle {
+  background-color: lime;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+.circle::before{
+  content: url(./assets/icons8-circle-100.png);
+}
+
+.cross {
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+}
+.cross::before{
+  content: url(./assets/icons8-multiply-100.png);
+}
+.empty {
+  background-color: beige;
+}
